@@ -1,6 +1,6 @@
 .super-nav {
   background-color: rgba(5,17,30,0.8);
-  border-bottom: 1px solid $lightGold;
+  border-bottom: 1px solid;
   display: flex;
   height: 5rem;
   position: fixed;
@@ -27,11 +27,6 @@
       transform: translateY(-50%);
       transition: color 0.1s ease-in-out;
     }
-    &:hover {
-      p {
-        color: $lightGold;
-      }
-    }
   }
   &__games-container {
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
@@ -41,15 +36,6 @@
     transform: translateY(-102%);
     transition: transform 0.1s ease-in-out;
     z-index: -1;
-    .hotg {
-      background-image: url(../assets/img/nav-logo-hotg.png);
-    }
-    .paladins {
-      background-image: url(../assets/img/nav-logo-paladins.png);
-    }
-    .jpf {
-      background-image: url(../assets/img/nav-logo-jpf.png);
-    }
     .account {
       p {
         color: #fff !important;
@@ -60,14 +46,13 @@
     }
   }
   .dropdown {
-    background-color: $blue;
+    background-color: blue;
     background-position: 4rem;
     background-repeat: no-repeat;
-    border-bottom: 1px solid $lightGold;
-    border-right: 1px solid $gray;
+    border-bottom: 1px solid;
+    border-right: 1px solid gray;
   }
   &__games.nav {
-    background-image: url(../assets/img/nav-logo-hirez.png);
     height: 5rem;
     padding: 0;
     width: 19rem;
@@ -89,22 +74,13 @@
     transition: background-color 0.1s ease-in-out;
     width: 19rem;
     &:not(:first-child) {
-      border-top: 1px solid $gray;
+      border-top: 1px solid gray;
     }
     &:hover {
-      background-color: $blue;
+      background-color: blue;
     }
-    p {
-      &:hover {
-        color: $lightGold;
-      }
-    }
-  }
-  &__game {
-
   }
   &__home.nav {
-      background-image: url(../assets/img/nav-logo-small.png);
       display: none;
       min-width: 10rem;
       width: 15.5rem;
@@ -125,7 +101,6 @@
     height: 5rem;
     width: 100%;
     .super-nav__home.nav {
-      background-image: url(../assets/img/nav-logo-small.png);
       display: inline-block;
       width: 15.5rem;
     }
@@ -134,7 +109,7 @@
     // margin-right: auto;
   }
   &__languages.nav {
-    background-color: $darkBlue;
+    background-color: blue;
     margin-left: auto;
     padding: 0;
     text-align: center;
@@ -235,8 +210,8 @@
     width: 100%;
   }
   .burger-container {
-    background-color: $darkBlue;
-    border-bottom: 1px solid $lightGold;
+    background-color: blue;
+    border-bottom: 1px solid;
     display: none;
     height: 100%;
     padding-left: 1rem;
@@ -244,7 +219,7 @@
     z-index: 1;
   }
   .burger-icon {
-    background-color: $darkBlue;
+    background-color: blue;
     cursor: pointer;
     font-size: 10px;
     height: 3.2em;
@@ -316,8 +291,8 @@
       display: inline-block;
     }
     .super-nav__home.nav {
-      background-color: $darkBlue;
-      border-bottom: 1px solid $lightGold;
+      background-color: blue;
+      border-bottom: 1px solid;
       display: inline-block;
     }
     .super-nav__sublinks {
@@ -334,7 +309,7 @@
         background-color: rgba(5,17,30,0.8);
       }
       &.active {
-        border-top: 1px solid $gray;
+        border-top: 1px solid gray;
         transform: translateY(24.3rem);
         &.language-active {
 	        transform: translateX(-100%);
@@ -358,7 +333,7 @@
         width: 100%;
       }
       .super-nav__games.nav {
-        background-color: $darkBlue;
+        background-color: blue;
         .super-nav__games-container {
           transform: translateY(-25rem);
         }

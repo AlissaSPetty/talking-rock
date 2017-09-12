@@ -25,20 +25,20 @@ class AppContainer extends Component {
       ReactGA.set({ page: location.pathname });
       ReactGA.pageview(location.pathname);
     });
-
-  render () {
-    const {
+  }
+      render() {
+        const {
       history
     } = this.props;
 
-    return (
-      <ConnectedRouter history={history} >
-        <Route render={({location}) => {
-          return (<Routes location={location} />)
-        }}/>
-      </ConnectedRouter>
-    ) ;
-  }
-}
+        return (
+          <ConnectedRouter history={history} >
+            <Route render={({ location }) => {
+              return (<Routes location={location} />)
+            }} />
+          </ConnectedRouter>
+        );
+      }
+    }    
 
 export default AppContainer;

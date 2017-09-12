@@ -1,6 +1,6 @@
 section.footer {
-  background: $darkBlue;
-  border-top: .1rem solid $mediumGray;
+  background: blue;
+  border-top: .1rem solid gray;
    &>div {
      align-items: center;
      display: flex;
@@ -10,7 +10,7 @@ section.footer {
 
 section.footer {
   .top {
-    border-bottom: .1rem solid $mediumGray;
+    border-bottom: .1rem solid;
     min-height: 8rem;
     @include breakpoint(900) {
       padding: 0 3rem;
@@ -45,7 +45,7 @@ section.footer {
         &:hover {
           background: white;
           .icon {
-            color: $darkBlue;
+            color: blue;
           }
         }
         &:not(:last-of-type) {
@@ -105,7 +105,7 @@ section.footer {
       margin-right: auto;
       max-height: 18rem;
       a {
-        color: $lightGray;
+        color: gray;
         font-size: 1.6rem;
         line-height: 4.4rem;
         margin-right: 4rem;
@@ -116,7 +116,7 @@ section.footer {
           line-height: 2.25rem;
         }
         &:hover {
-          color: $gold;
+          color: gold;
         }
       }
     }
@@ -229,7 +229,7 @@ section.footer {
           justify-content: center;
         }
         a {
-          color: $gray;
+          color: gray;
           font-size: 1.4rem;
           text-decoration: none;
           @include breakpoint(sm) {
@@ -252,7 +252,7 @@ section.footer {
       }
     }
     &__copyright {
-      color: $gray;
+      color: gray;
       font-size: 1.4rem;
       margin-left: auto;
       text-transform: none;

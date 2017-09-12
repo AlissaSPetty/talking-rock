@@ -6,8 +6,6 @@ import { withCookies, Cookies } from 'react-cookie';
 
 class SuperNav extends Component {
 
-	}
-
 
     render() {
 		const { t } = this.props;
@@ -19,6 +17,6 @@ class SuperNav extends Component {
     }
 }
 
-export default withCookies(translate(['common'], { withRef: true })(SuperNav));
+export default SuperNav;
 
 

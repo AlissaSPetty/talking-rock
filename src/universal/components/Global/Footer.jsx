@@ -153,16 +153,16 @@ class Footer extends Component {
     }
 
     render(){
-		const { t } = this.props;
+		const {} = this.props;
 
         return (
           <section className="footer">
 						<div className="bottom__copyright">
-							&copy; {t('2017 Copyright Talking Metal All rights reserved.')}
+							&copy; {('2017 Copyright Talking Metal All rights reserved.')}
 						</div>
           </section>
         );
     }
 }
 
-export default translate(['common'], { withRef: true })(Footer);
+export default Footer;
