@@ -79,12 +79,6 @@ gulp.task('copy-prod', ['clean-prod'], function () {
     .pipe(gulp.dest(bases.prod));
 });
 
-
-gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch('app/scss/**/*.scss', ['sass']);
-    // Other watchers
-  })
-
 gulp.task('imagemin', function () {
   return gulp.src(bases.dev + 'images/**/*')
     .pipe(cache(imagemin({
@@ -94,20 +88,5 @@ gulp.task('imagemin', function () {
     })))
     .pipe(gulp.dest(bases.dev + 'images'));
 });
-gulp.task('webserver', function () {
-  gulp.src('dev/wp')
-    .pipe(webserver({
-      livereload: true
-    }));
-});
-gulp.task('browserSync', function () {
-    browserSync.init({
-      server: {
-      baseDir : './'
-      }
-    })
-  })
-
-gulp.task('default', ['watch', 'sass']);
 
 gulp.task('production', ['scripts-prod']);
