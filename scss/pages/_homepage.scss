@@ -1,0 +1,59 @@
+.home {
+  background: black;
+}
+.homepage {
+  background: black;
+  color: white;
+  h1 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .latestPost--1, .latestPost--2, .latestPost--3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    .featured-image {
+      margin-left: 2rem;
+      position: relative;
+      width: 1200px;
+      .date {
+        background: #d4b300;
+        color: black;
+        font-size: 31px;
+        font-weight: 600;
+        height: 70px;
+        line-height: 35px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 70px;
+      }
+    }
+    .postInfo {
+      margin: 0 10rem;
+      span {
+        color: #d4b300;
+        font-weight: 600;
+      }
+      .ctaBtn {
+        background: #d4b300;
+        border-radius: 15px;
+        font-weight: 600;
+        margin: 0 auto;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 6px #000;
+        transition: 0.5s ease;
+        width: 150px;
+        &:hover {
+          transform: translateY(10px);
+        }
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "talking-rock",
+  "version": "0.1.0",
+  "description": "Talking Rock",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "~0.4.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-image-resize": "~0.7.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-reload": "0.0.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-task-list": "0.0.1",
+    "gulp-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alissa-taylor/talking-rock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alissa-taylor/talking-rock/issues"
+  },
+  "homepage": "https://github.com/alissa-taylor/talking-rock"
+}
