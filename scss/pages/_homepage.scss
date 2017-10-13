@@ -9,9 +9,10 @@
     text-align: center;
     text-transform: uppercase;
   }
-  .latestPost--1, .latestPost--2, .latestPost--3 {
-    display: flex;
+  .latestPost {
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
     .featured-image {
       margin-left: 2rem;

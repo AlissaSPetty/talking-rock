@@ -1,8 +1,6 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	display: flex !important;
+	justify-content: flex-end;
 
 	ul {
 		display: none;
@@ -32,6 +30,7 @@
 
 			a {
 				width: 200px;
+				margin: 12px;
 			}
 
 			:hover > a,
@@ -61,6 +60,13 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: white;
+		&:visited {
+			color: white;
+		}
+		&:hover {
+			color: #d4b300;
+		}
 	}
 
 	.current_page_item > a,
