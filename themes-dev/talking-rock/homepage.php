@@ -18,20 +18,19 @@ get_header();
       <div class="latestPost">
         <div class="featured-image">
           <img src="<?php the_post_thumbnail_url('medium'); ?> " alt="">
-          <div class="date"><?php the_date(); ?></div>
+          <div class="date"><?php the_date('M d'); ?></div>
         </div>
         <div class="postInfo">
-          <div class="date">
-            Date:
-            <span><?php the_date(); ?></span>
-            <h3><?php the_title(); ?></h3>
-            <p><?php the_excerpt(); ?></p>
-            <div class='ctaBtn'><a href="">Read More</a></div>
+          <div class="date-long">
+            Date:<?php the_date('m d, YYYY'); ?>
           </div>
+          <h3><?php the_title(); ?></h3>
+          <p><?php the_excerpt(); ?></p>
+          <div class='ctaBtn'><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></div>
         </div>
-        <?php
-        endforeach;
-        wp_reset_postdata();
-      } ?>
       </div>
-    </div>
+      <?php
+      endforeach;
+      wp_reset_postdata();
+    } ?>
+</div>
