@@ -1,12 +1,12 @@
 
 <?php
-//Template Name: News
+//Template Name: Talking Metal Jams
 get_header();
 ?>
 	
-<div class='news'>
-  <h1>news</h1>  
-  <?php $catquery = new WP_Query('cat=4&posts_per_page=100'); ?>
+<div class='talking-metal-jams'>
+  <h1>Talking Metal Jams</h1>  
+  <?php $catquery = new WP_Query('cat=13&posts_per_page=100'); ?>
   <ul>
   
   <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
