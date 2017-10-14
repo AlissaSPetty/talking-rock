@@ -1,6 +1,4 @@
 .main-navigation {
-	display: flex !important;
-	justify-content: flex-end;
 
 	ul {
 		display: none;
@@ -51,6 +49,7 @@
 	li {
 		float: left;
 		position: relative;
+		padding: 20px;
 
 		&:hover > a,
 		&.focus > a {
@@ -60,12 +59,12 @@
 	a {
 		display: block;
 		text-decoration: none;
-		color: white;
+		color: white !important;
 		&:visited {
-			color: white;
+			color: white !important;
 		}
 		&:hover {
-			color: #d4b300;
+			color: #d4b300 !important;
 		}
 	}
 
@@ -73,6 +72,13 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+	}
+}
+ul.children {
+	background: black;
+	li {
+		border-bottom: 1px solid white;
+		padding: 0;
 	}
 }
 
