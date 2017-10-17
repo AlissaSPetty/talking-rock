@@ -5,13 +5,43 @@ get_header();
 ?>
 	
 <div class='homepage'>
-  <h1>Latest News</h1>  
-  <?php $postslist = get_posts(array(
-    'posts_per_page' => 3,
-    'order' => 'ASC',
-    'orderby' => 'title'
-  ));
-    if ($postslist) {
+  <h1>Latest News</h1> 
+  <div class="swiper">
+    <div class='swiper-container'>
+      <div class='swiper-wrapper'>
+      <?php 
+      $posts = get_field('post_name');
+      if ($posts) : ?>
+        <?php foreach ($posts as $post) : // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+          <div class="swiper-slide">
+            <a href="<?php the_permalink(); ?>">
+              <img src="<?php the_post_thumbnail_url('large'); ?>" alt="">
+              <p><?php the_title(); ?></p>
+            </a>
+          </div>
+          <?php endforeach; ?>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?> 
+    <?php $postslist = get_posts(array(
+      'posts_per_page' => 3,
+      'order' => 'ASC',
+      'orderby' => 'title'
+    ));
+    ?>
+    <?php if ($postslist) {
       foreach ($postslist as $post) :
         setup_postdata($post);
       ?>
@@ -21,9 +51,7 @@ get_header();
           <div class="date"><?php the_date('M d'); ?></div>
         </div>
         <div class="postInfo">
-          <div class="date-long">
-            Date:<?php the_date('m d, YYYY'); ?>
-          </div>
+          <div class="date">Date: <?php the_date(); ?></div>
           <h3><?php the_title(); ?></h3>
           <p><?php the_excerpt(); ?></p>
           <div class='ctaBtn'><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></div>

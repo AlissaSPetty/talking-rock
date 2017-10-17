@@ -12,12 +12,10 @@
   .latestPost {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 5rem;
     .featured-image {
       margin-left: 2rem;
       position: relative;
-      width: 1200px;
       .date {
         background: #d4b300;
         color: black;
@@ -33,6 +31,7 @@
     }
     .postInfo {
       margin: 0 10rem;
+      width: 1000px;
       span {
         color: #d4b300;
         font-weight: 600;
@@ -51,7 +50,7 @@
           transform: translateY(10px);
         }
         a {
-          color: white;
+          color: white !important; 
           text-decoration: none;
         }
       }
