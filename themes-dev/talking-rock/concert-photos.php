@@ -4,8 +4,8 @@
 get_header();
 ?>
 	
+<h1 class="header">Concert Photos</h1>  
 <div class='concert-photos'>
-  <h1>Concert Photos</h1>  
   <?php $catquery = new WP_Query('cat=3&posts_per_page=100'); ?>
   <ul>
   

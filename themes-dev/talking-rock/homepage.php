@@ -5,7 +5,6 @@ get_header();
 ?>
 	
 <div class='homepage'>
-  <h1>Latest News</h1> 
   <div class="swiper">
     <div class='swiper-container'>
       <div class='swiper-wrapper'>
@@ -27,7 +26,8 @@ get_header();
         </div>
       </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-<?php endif; ?> 
+    <?php endif; ?>  
+    <h1>Latest News</h1> 
     <?php $postslist = get_posts(array(
       'posts_per_page' => 3,
       'order' => 'ASC',

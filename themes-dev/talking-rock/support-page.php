@@ -4,8 +4,8 @@
 get_header();
 ?>
 	
+<h1 class="header">Support Page</h1>  
 <div class='support-page'>
-  <h1>Support Page</h1>  
   <?php $postslist = get_posts(array(
     'posts_per_page' => 3,
     'order' => 'ASC',

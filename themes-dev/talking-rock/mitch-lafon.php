@@ -4,8 +4,8 @@
 get_header();
 ?>
 	
+<h1 class="header">Mitch Lafon</h1>  
 <div class='category mitch-lafon'>
-  <h1>Mitch Lafon</h1>  
   <?php $catquery = new WP_Query('cat=7&posts_per_page=100'); ?>
   <ul>
   

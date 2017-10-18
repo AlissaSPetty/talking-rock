@@ -4,8 +4,8 @@
 get_header();
 ?>
 	
+<h1 class="header">news</h1>  
 <div class='category news'>
-  <h1>news</h1>  
   <?php $catquery = new WP_Query('cat=4&posts_per_page=100'); ?>
   <ul>
   

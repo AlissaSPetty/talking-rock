@@ -41,14 +41,25 @@
 		}
 	}
 }
+.header {
+	font-family: 'New Rocker', sans-serif;
+	height: 300px;
+	border-bottom: 1px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-size: 44px;
+	margin-bottom: 10rem;
+}
 .category {
-	h1 {
-		text-align: center;
-	}
 	width: 1200px;
 	margin: 0 auto;
 	li {
 		list-style-type: none;
+		text-align: center;
 	}
 	img {
 		border: 1px solid white;
@@ -57,5 +68,6 @@
 	p {
 		width: 600px;
 		text-align: justify;
+		margin: 0 auto 30px;
 	}
 }
