@@ -21,16 +21,9 @@ get_header();
             </a>
           </div>
           <?php endforeach; ?>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          
-          <!-- If we need navigation buttons -->
+          </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-          </div>
         </div>
       </div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
@@ -54,7 +47,7 @@ get_header();
           <div class="date">Date: <?php the_date(); ?></div>
           <h3><?php the_title(); ?></h3>
           <p><?php the_excerpt(); ?></p>
-          <div class='ctaBtn'><a href="<?php echo get_permalink($post->ID); ?>">Read More</a></div>
+          <div class='ctaBtn'><a href="<?php echo get_permalink(); ?>">Read More</a></div>
         </div>
       </div>
       <?php
@@ -62,3 +55,16 @@ get_header();
       wp_reset_postdata();
     } ?>
 </div>
+
+<script>
+   $(document).ready(function(){
+     var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+  });
+    </script>

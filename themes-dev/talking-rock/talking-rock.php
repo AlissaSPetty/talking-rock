@@ -4,7 +4,7 @@
 get_header();
 ?>
 	
-<div class='talking-rock'>
+<div class='category talking-rock'>
   <h1>Talking Rock</h1>  
 
   <?php $catquery = new WP_Query('cat=9&posts_per_page=100'); ?>

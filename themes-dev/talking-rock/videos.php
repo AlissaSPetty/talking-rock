@@ -4,7 +4,7 @@
 get_header();
 ?>
 	
-<div class='videos'>
+<div class='category videos'>
   <h1>Videos</h1>  
   <?php $catquery = new WP_Query('cat=11&posts_per_page=100'); ?>
   <ul>

@@ -41,3 +41,21 @@
 		}
 	}
 }
+.category {
+	h1 {
+		text-align: center;
+	}
+	width: 1200px;
+	margin: 0 auto;
+	li {
+		list-style-type: none;
+	}
+	img {
+		border: 1px solid white;
+		width: 50%;
+	}
+	p {
+		width: 600px;
+		text-align: justify;
+	}
+}

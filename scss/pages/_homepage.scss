@@ -9,10 +9,22 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .swiper {
+    .swiper-slide {
+      img {
+        width: 500px;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 30%;
+    }
+  }
   .latestPost {
     align-items: center;
     display: flex;
     margin-bottom: 5rem;
+    justify-content: center;
     .featured-image {
       margin-left: 2rem;
       position: relative;
