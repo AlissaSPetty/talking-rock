@@ -44,7 +44,8 @@ get_header();
           <div class="date"><?php the_date('M d'); ?></div>
         </div>
         <div class="postInfo">
-          <div class="date">Date: <?php the_date(); ?></div>
+          <div class="date">Date: <?php echo get_the_date(); ?></div>
+          <div class="category">Posted in: <?php the_category(' '); ?></div>          
           <h3><?php the_title(); ?></h3>
           <p><?php the_excerpt(); ?></p>
           <div class='ctaBtn'><a href="<?php echo get_permalink(); ?>">Read More</a></div>
@@ -54,6 +55,7 @@ get_header();
       endforeach;
       wp_reset_postdata();
     } ?>
+    <div class='moreNews'><a href="<?php echo get_permalink(); ?>">More News</a></div>
 </div>
 
 <script>
@@ -68,3 +70,6 @@ get_header();
     });
   });
     </script>
+    <?php
+    get_footer();
+    ?>

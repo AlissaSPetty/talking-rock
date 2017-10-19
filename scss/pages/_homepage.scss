@@ -8,7 +8,6 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'New Rocker', sans-serif;
     letter-spacing: 4px;
     margin-top: 10rem; 
   }
@@ -69,6 +68,25 @@
           text-decoration: none;
         }
       }
+    }
+  }
+  .moreNews {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    background: white;
+    width: 170px;
+    border-radius: 10px;
+    font-size: 21px;
+    transition: 0.5s ease;
+    &:hover {
+      transform: translateY(10px);
+    }
+    a {
+      color: black !important;
+      text-decoration: none;
+      text-transform: uppercase;
     }
   }
 }
