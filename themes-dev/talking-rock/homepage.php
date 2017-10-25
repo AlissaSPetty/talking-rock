@@ -5,8 +5,6 @@ get_header();
 ?>
 	
 <div class='homepage'>
-<?php echo do_shortcode('[searchform]'); ?>
-
   <div class="swiper">
     <div class='swiper-container'>
       <div class='swiper-wrapper'>

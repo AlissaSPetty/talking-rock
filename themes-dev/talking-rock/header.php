@@ -21,6 +21,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108611471-1"></script>
@@ -46,8 +47,20 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php echo do_shortcode('[searchform]'); ?>
+					<div class="social">
+						<a href=""><i class="ion-social-facebook"></i></a>
+						<a href=""><i class="ion-social-instagram"></i></a>
+						<a href=""><i class="ion-social-snapchat"></i></a>  
+					</div>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost:8888/wp-content/uploads/2017/10/talking-rock-jpg.jpg"></a></p>
+				<?php echo do_shortcode('[searchform]'); ?>
+				<div class="social">
+					<a href=""><i class="ion-social-facebook"></i></a>
+					<a href=""><i class="ion-social-instagram"></i></a>
+					<a href=""><i class="ion-social-snapchat"></i></a>  
+				</div>
 			<?php
 			endif;
 

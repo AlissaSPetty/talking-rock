@@ -121,7 +121,7 @@ function rlv_search_form()
 	$form = <<<EOH
 <form role="search" method="get" id="searchform" class="searchform" action="$url">
 <label class="screen-reader-text" for="s">Search for:</label>
-<input type="text" value="" name="s" id="s" />
+<input type="text" value="" placeholder="search the site" name="s" id="s" />
 <input type="submit" id="searchsubmit" value="Search" />
 </form>
 EOH;
