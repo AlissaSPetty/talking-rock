@@ -3,8 +3,8 @@
  * Template Name: Full-width, no sidebar
  * Description: A full-width template with no sidebar
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 get_header();

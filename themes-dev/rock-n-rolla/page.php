@@ -9,8 +9,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 get_header(); ?>

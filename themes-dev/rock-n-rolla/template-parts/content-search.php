@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 ?>
@@ -14,7 +14,7 @@
 	<div class="post-container <?php if(has_post_thumbnail()){ echo 'post-hover';}?>">
 		<?php if(has_post_thumbnail()){ ?>
             <div class="post-thumbnail front">
-                <a href="<?php the_permalink('') ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('rock-n-rolla-featured-thumbnail'); ?></a>
+                <a href="<?php the_permalink('') ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('talking-rock-featured-thumbnail'); ?></a>
             </div>
         <?php }?>
         <div class="post-details <?php if(has_post_thumbnail()){ echo 'back';}else{echo 'front';}?>">
@@ -29,7 +29,7 @@
             
                     if ( 'post' === get_post_type() ) : ?>
                     <div class="entry-meta">
-                        <?php rock_n_rolla_posted_on(); ?>
+                        <?php talking_rock_posted_on(); ?>
                     </div><!-- .entry-meta -->
                     <?php
                     endif; ?>
@@ -39,7 +39,7 @@
                     the_excerpt();
                 ?>
                 <div class="button-container">
-                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Read More', 'rock-n-rolla' ); ?></a>
+                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Read More', 'talking-rock' ); ?></a>
                 </div>
             </div><!-- .entry-content -->
         </div><!--post-details-->

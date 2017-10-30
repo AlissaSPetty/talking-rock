@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 ?>
@@ -17,7 +17,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rock-n-rolla' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'talking-rock' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'rock-n-rolla' ),
+					esc_html__( 'Edit %s', 'talking-rock' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',

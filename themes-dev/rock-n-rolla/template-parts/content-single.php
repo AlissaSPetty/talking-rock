@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 ?>
@@ -18,7 +18,7 @@
 		?>
 		<?php 
 			 wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rock-n-rolla' ),
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'talking-rock' ),
                 'after'  => '</div>',
             ) );
 		?>

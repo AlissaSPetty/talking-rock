@@ -1,6 +1,6 @@
 <?php 
-	$slider_display = get_theme_mod( 'rock_n_rolla_display_carousel_setting', 0);
-	$slider_cat = get_theme_mod( 'rock_n_rolla_carousel_category_setting'); 
+	$slider_display = get_theme_mod( 'talking_rock_display_carousel_setting', 0);
+	$slider_cat = get_theme_mod( 'talking_rock_carousel_category_setting'); 
 ?>
 	
 <?php
@@ -25,8 +25,8 @@ $the_query = new WP_Query( $args );
 ?>
 <?php if($slider_display == 1){ ?> 
 <div id="featured-post">
-    <?php if ( get_theme_mod( 'rock_n_rolla_carousel_label' ) ) { ?>
-        <h1 class="section-label"><?php echo get_theme_mod( 'rock_n_rolla_carousel_label' ); ?><!--Newest Album--></h1>
+    <?php if ( get_theme_mod( 'talking_rock_carousel_label' ) ) { ?>
+        <h1 class="section-label"><?php echo get_theme_mod( 'talking_rock_carousel_label' ); ?><!--Newest Album--></h1>
     <?php } ?>
     <div class="flexslider carousel">
         
@@ -39,7 +39,7 @@ $the_query = new WP_Query( $args );
                         <li>
                             <div class="featured-post-thumbnail">
                                 <a href="<?php the_permalink('') ?>">
-                                    <?php the_post_thumbnail('rock-n-rolla-medium-thumbnail'); ?>
+                                    <?php the_post_thumbnail('talking-rock-medium-thumbnail'); ?>
                                     <div class="tour-title">
 										<span><?php the_title(); ?></span>
                                     </div>

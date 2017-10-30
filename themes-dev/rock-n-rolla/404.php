@@ -4,8 +4,8 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 get_header(); ?>
@@ -20,11 +20,11 @@ get_header(); ?>
             
                         <section class="error-404 not-found">
                             <header class="page-header">
-                                <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'rock-n-rolla' ); ?></h1>
+                                <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'talking-rock' ); ?></h1>
                             </header><!-- .page-header -->
             
                             <div class="page-content">
-                                <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try searching for a post?', 'rock-n-rolla' ); ?></p>
+                                <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try searching for a post?', 'talking-rock' ); ?></p>
             
                                 <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
             

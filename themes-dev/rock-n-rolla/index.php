@@ -9,20 +9,20 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 get_header(); ?>
 	<div class="container">
     	<?php 
-		$displayayer = get_theme_mod( 'rock_n_rolla_display_album_setting', 0 );
+		$displayayer = get_theme_mod( 'talking_rock_display_album_setting', 0 );
 		if ( $displayayer == 1 ) { ?>
             <div id="sc-playlist">
-            	<?php if ( get_theme_mod( 'rock_n_rolla_album_label' ) ) { ?>
-                	<h1 class="section-label"><?php echo esc_html(get_theme_mod( 'rock_n_rolla_album_label' )); ?><!--Newest Album--></h1>
+            	<?php if ( get_theme_mod( 'talking_rock_album_label' ) ) { ?>
+                	<h1 class="section-label"><?php echo esc_html(get_theme_mod( 'talking_rock_album_label' )); ?><!--Newest Album--></h1>
                 <?php } ?>
-                <?php echo rock_n_rolla_audio(); ?>
+                <?php echo talking_rock_audio(); ?>
             </div>
         <?php } ?>
         
@@ -31,7 +31,7 @@ get_header(); ?>
                 <div class="col-md-8">
                     <main id="main" class="site-main" role="main">
                    
-					<h1 class="section-label"><?php if ( get_theme_mod( 'rock_n_rolla_post_label' ) ) { echo esc_html(get_theme_mod( 'rock_n_rolla_post_label' )); } else { esc_attr_e('Latest post', 'rock-n-rolla');}?><!--Newest Album--></h1>
+					<h1 class="section-label"><?php if ( get_theme_mod( 'talking_rock_post_label' ) ) { echo esc_html(get_theme_mod( 'talking_rock_post_label' )); } else { esc_attr_e('Latest post', 'talking-rock');}?><!--Newest Album--></h1>
                      
                     <?php
                     if ( have_posts() ) :

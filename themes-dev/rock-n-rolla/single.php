@@ -4,8 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Rock_N_Rolla
- * @since Rock_N_Rolla 1.0
+ * @package Talking_Rock
+ * @since Talking_Rock 1.0
  */
 
 get_header(); ?>
@@ -28,7 +28,7 @@ while ( have_posts() ) : the_post();
         
                 if ( 'post' === get_post_type() ) : ?>
                 <div class="entry-meta">
-                    <?php rock_n_rolla_posted_on(); ?>
+                    <?php talking_rock_posted_on(); ?>
                 </div><!-- .entry-meta -->
                 <?php
             endif; ?>

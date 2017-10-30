@@ -1,6 +1,6 @@
 <?php 
-	$slider_display =  get_theme_mod( 'rock_n_rolla_display_slider_setting', 0);
-	$slider_cat = get_theme_mod( 'rock_n_rolla_slide_category_setting');
+	$slider_display =  get_theme_mod( 'talking_rock_display_slider_setting', 0);
+	$slider_cat = get_theme_mod( 'talking_rock_slide_category_setting');
  
 	//query posts
 	$args =	array(
@@ -36,7 +36,7 @@
                     
                         if ( has_post_format( 'video' )) {?>
                             <div class="item bg">
-                                <?php echo wp_oembed_get(rock_n_rolla_catch_first_video());?>
+                                <?php echo wp_oembed_get(talking_rock_catch_first_video());?>
                             </div>
                         <?php }else{
                             
