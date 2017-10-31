@@ -53,7 +53,7 @@
                     <div class="row">
                     	<div class="col-md-6">
                             <div class="site-branding">
-                            
+                                <p style="font-weight: 600; margin: 0; text-transform: uppercase">Mark Strigl's</p>
 						   		<?php 
 									if ( function_exists( 'the_custom_logo' ) ) {
 										the_custom_logo();

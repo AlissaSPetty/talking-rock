@@ -5,7 +5,7 @@
 	//query posts
 	$args =	array(
 		'offset'           => 0,
-		'posts_per_page'   => 10,
+		'posts_per_page'   => 4,
 		'category_name'    => $slider_cat,
 		'orderby'          => 'post_date',
 		'order'            => 'DESC',
@@ -44,10 +44,15 @@
                         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
                         ?>
                         <?php if($counter < 6){?> 
-                        <div class="item bg bg<?php echo $counter; ?> <?php if($counter == 1) {echo "active";} ?>">    	
-                            <div class="carousel-content-bg">
-                            	<?php the_post_thumbnail( 'full', array( 'class' => 'full-slide' ) ); ?>
-                            </div>
+                        <div class="item bg bg<?php echo $counter; ?> <?php if($counter == 1) {echo "active";} ?>">
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="carousel-content-bg">
+                                    <?php the_post_thumbnail( 'full', array( 'class' => 'full-slide' ) ); ?>
+                                </div>
+                                <div class='banner'>
+                                    <p class='title'><?php the_title(); ?></p>
+                                </div>
+                            </a>    	
                         </div>
                          <?php $counter = $counter + 1; ?>
                          <?php } ?>
