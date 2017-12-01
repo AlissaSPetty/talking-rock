@@ -278,6 +278,17 @@ if (!function_exists( 'talking_rock_theme_customizer' ) ) :
 			'settings' => 'talking_rock_twitter_setting',
 			'priority'    => 2,
 		) ) );
+
+		$wp_customize->add_setting( 'talking_rock_snapchat_setting', array (
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+		
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'talking_rock_snapchat', array(
+			'label'    => __( 'Enter your Snapchat  url', 'talking-rock' ),
+			'section'  => 'talking_rock_social_section',
+			'settings' => 'talking_rock_snapchat_setting',
+			'priority'    => 13,
+		) ) );
 		
 		$wp_customize->add_setting( 'talking_rock_google_setting', array (
 			'sanitize_callback' => 'esc_url_raw',
@@ -287,7 +298,7 @@ if (!function_exists( 'talking_rock_theme_customizer' ) ) :
 			'label'    => __( 'Enter your Google+ url', 'talking-rock' ),
 			'section'  => 'talking_rock_social_section',
 			'settings' => 'talking_rock_google_setting',
-			'priority'    => 3,
+			'priority'    => 14,
 		) ) );
 	
 		$wp_customize->add_setting( 'talking_rock_pinterest_setting', array (

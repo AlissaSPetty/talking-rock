@@ -43,6 +43,9 @@
                             <?php if ( get_theme_mod( 'talking_rock_twitter_setting' ) ){ ?>
                                 <li><a href="<?php echo esc_url( get_theme_mod( 'talking_rock_twitter_setting' ) ); ?>" title="<?php esc_attr_e('Twitter', 'talking-rock'); ?>"><i class="fa fa-twitter"></i></a></li>
                             <?php } ?>
+                            <?php if (get_theme_mod('talking_rock_snapchat_setting')) { ?>
+                                <li><a href="<?php echo esc_url(get_theme_mod('talking_rock_snapchat_setting')); ?>" title="<?php esc_attr_e('Snapchat', 'talking-rock'); ?>"><i class="fa fa-snapchat"></i></a></li>
+                            <?php } ?>
                             <?php if ( get_theme_mod( 'talking_rock_google_setting' ) ){ ?>
                                 <li><a href="<?php echo esc_url( get_theme_mod( 'talking_rock_google_setting' ) ); ?>" title="<?php esc_attr_e('Google Plus', 'talking-rock'); ?>"><i class="fa fa-google-plus"></i></a></li>
                             <?php } ?>
