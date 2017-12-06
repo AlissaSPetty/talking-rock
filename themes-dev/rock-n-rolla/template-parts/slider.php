@@ -25,7 +25,7 @@
 <section id="home-slider">
 	<?php if($slider_display == 1){ ?> 
         <?php if ($the_query->have_posts()) : ?>    	
-                
+        <div class="center">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
             <!-- Wrapper for slides -->
@@ -68,7 +68,7 @@
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-       
+        </div>
         <?php endif; ?> 
     <?php } ?> 
  </section>
