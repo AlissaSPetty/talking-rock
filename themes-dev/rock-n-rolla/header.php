@@ -19,6 +19,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108611471-1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -28,7 +29,14 @@
 </script>
 <?php wp_head(); ?>
 </head>
-
+<script>
+$( document ).ready(function() {
+  var loc = window.location.href; // returns the full URL
+  if(/talking-metal/.test(loc)) {
+    $('#primary').addClass('logo');
+  }
+});
+</script>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'talking-rock' ); ?></a>
