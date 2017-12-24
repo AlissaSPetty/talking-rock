@@ -11,6 +11,7 @@
 get_header(); ?>
 	<div class="container">
         <div id="primary" class="content-area archive-template">
+            <img id="talking-metal" src="http://talkingrock.net/wp-content/uploads/2017/12/talking-metal.png"/>
         	<div class="row>">
             	<div class="col-md-8">
                     <main id="main" class="site-main" role="main">

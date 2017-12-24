@@ -33,7 +33,7 @@
 $( document ).ready(function() {
   var loc = window.location.href; // returns the full URL
   if(/talking-metal/.test(loc)) {
-    $('#primary').addClass('logo');
+    $('#talking-metal').addClass('show');
   }
 });
 </script>
